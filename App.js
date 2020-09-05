@@ -16,7 +16,7 @@ if(!global.atob) global.atob = decode;
 export default function App(){
  
   const [user, setUser] = useState(undefined)
-
+  console.log(user)
   useEffect(() => {
     firebase.auth().onAuthStateChanged((response) => {
       setUser(response)

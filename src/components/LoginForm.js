@@ -54,7 +54,7 @@ export default function LoginForm(props) {
                 secureTextEntry = {true}
             />
             <TouchableOpacity onPress = {login}>
-                <Text style = {styles.btnText}> ingresar</Text>
+                <Text style = {styles.btnText}>ingresar</Text>
             </TouchableOpacity>
             <View>
                 <TouchableOpacity onPress = {changeForm}>
@@ -74,20 +74,20 @@ function defaultValue(){
 
 const styles = StyleSheet.create({
     btnText:{
-        color: "#fff",
-        fontSize: 18,
+        color: "black",
+        fontSize: 18, 
     },
     input:{
         height: 50,
         color: "#fff",
         width: "80%",
         marginBottom: 20,
-        backgroundColor: "#1e3040",
+        //backgroundColor: "#1e3040",
         paddingHorizontal: 20,
         borderRadius: 50,
         fontSize: 18,
         borderWidth: 1,
-        borderColor: "#1e3040"
+       // borderColor: "light-grey"
     },
     register: {
         flex:1,
