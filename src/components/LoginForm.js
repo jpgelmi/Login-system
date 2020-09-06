@@ -56,7 +56,7 @@ export default function LoginForm(props) {
             <TouchableOpacity onPress = {login}>
                 <Text style = {styles.btnText}>ingresar</Text>
             </TouchableOpacity>
-            <View>
+            <View style = {styles.register}>
                 <TouchableOpacity onPress = {changeForm}>
                     <Text style = {styles.register}>Registrate</Text>
                 </TouchableOpacity>
@@ -92,7 +92,8 @@ const styles = StyleSheet.create({
     register: {
         flex:1,
         justifyContent:"center",
-        marginBottom: 10
+        marginVertical: 10,
+        fontSize: 18
     },
     error:{
         borderColor: "#940c0c"
