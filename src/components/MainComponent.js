@@ -7,7 +7,7 @@ import firebase from "../utils/firebase"
 export default function MainComponent(props) {
     const{user} = props
 
-    console.log(user.email)
+    console.log(user)
     return (
         <View>
             <Header/>

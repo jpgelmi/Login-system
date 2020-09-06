@@ -48,6 +48,22 @@ export default function RegisterForm(props) {
     return (
         <>
             <View style = {{paddingTop: 50}}/>
+            <TextInput
+                style = {[styles.input, formError.repassword && styles.error]}
+                style = {styles.input}
+                placeholder = "Nombre"
+                placeholderTextColor = "#969696"
+                secureTextEntry = {true}
+                onChange ={e => setFormData({...formData,name: e.nativeEvent.text})} 
+            />
+            <TextInput
+                style = {[styles.input, formError.repassword && styles.error]}
+                style = {styles.input}
+                placeholder = "Apellido"
+                placeholderTextColor = "#969696"
+                secureTextEntry = {true}
+                onChange ={e => setFormData({...formData,apellido: e.nativeEvent.text})} 
+            />
           <TextInput
                 style = {[styles.input, formError.mail && styles.error]}
                 //Que aparece cómo default 
@@ -94,6 +110,8 @@ function defaultValue(){
             mail: "",
         password: "",
         repassword: "",
+        name:"",
+        apellido:""
         }
 }
 
