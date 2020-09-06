@@ -47,6 +47,7 @@ export default function RegisterForm(props) {
 
     return (
         <>
+            <View style = {{paddingTop: 50}}/>
           <TextInput
                 style = {[styles.input, formError.mail && styles.error]}
                 //Que aparece cómo default 
@@ -56,9 +57,8 @@ export default function RegisterForm(props) {
                 //El "e.nativeEvent" es lo que se pasa por el componente
                 onChange = {e => setFormData({...formData, mail: e.nativeEvent.text})}
             />  
-
             <TextInput
-                style = {[styles.input, formError.password && styles.error]}
+                style = {[styles.input, formError.password && styles.error,]}
                 placeholder = "Contraseña"
                 placeholderTextColor = "#969696"
                 secureTextEntry = {true}
@@ -117,8 +117,8 @@ const styles = StyleSheet.create({
 
     login:{
         flex: 1,
-        justifyContent: "flex-end",
-        marginBottom: 20
+        //justifyContent: "flex-end",
+        marginVertical: 30
     },
     error:{
         borderColor:"#940c0c"
