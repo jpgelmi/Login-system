@@ -11,7 +11,6 @@ export default function MainComponent(props) {
         <View>
             <Text style = {{paddingVertical: 30, paddingHorizontal: 20}}>{user.email}</Text>
             <View style = {styles.viewCoulse}>
-                {/*Al apretar el botón... Hacemos un LogOut*/}
                 <Text style = {styles.text}
                 onPress ={() => {firebase.auth().signOut()}}>Cerrar sesion</Text>
             </View>
